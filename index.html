@@ -91,6 +91,16 @@ section{padding:72px 0;border-top:1px solid var(--line)}
 .card p{margin:0;color:var(--muted);font-size:15px}
 .card .k{font-size:12.5px;font-weight:600;color:var(--warm);text-transform:uppercase;letter-spacing:.08em;margin-top:auto;padding-top:8px}
 
+.offer{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:30px 28px;margin:6px 0 34px;display:grid;grid-template-columns:1.1fr 1fr;gap:28px;position:relative;overflow:hidden}
+.offer:before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--accent)}
+@media (max-width:720px){.offer{grid-template-columns:1fr;padding:26px 22px}}
+.offer h3{font-family:var(--serif);font-weight:500;font-size:28px;line-height:1.2;margin:10px 0 10px;letter-spacing:-.01em}
+.offer p{margin:0 0 18px;color:var(--muted);font-size:15.5px}
+.offer ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.offer li{display:grid;grid-template-columns:22px 1fr;gap:10px;font-size:15px}
+.offer li:before{content:"✓";color:var(--accent);font-weight:700}
+.offer .plan{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.offer .plan span{font-size:13px;font-weight:600;padding:6px 12px;border-radius:999px;border:1px solid var(--line);color:var(--ink)}
 .skills{display:grid;grid-template-columns:repeat(2,1fr);gap:0 40px}
 @media (max-width:720px){.skills{grid-template-columns:1fr}}
 .skill{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
@@ -125,7 +135,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 <div class="wrap hero">
   <p class="eyebrow">Web Designer · Google Ads Specialist</p>
   <h1>I build websites and bring <em>customers</em> to them.</h1>
-  <p class="lead">Hi, I'm Xhulia. I design WordPress sites, build web apps with AI, and run Google Ads and SEO so the right people find them.</p>
+  <p class="lead">Hi, I'm Xhulia. I design WordPress sites, build web apps with AI, run Google Ads and SEO so the right people find them, and set up AI automations so no enquiry gets lost.</p>
   <div class="btns">
     <a class="btn primary" href="#work">See my work</a>
     <a class="btn" href="#contact">Get in touch</a>
@@ -204,10 +214,27 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 </div></section>
 
 <section id="services"><div class="wrap">
-  <div class="sec-head"><h2>What I do</h2><span class="n">02 — Skills</span></div>
+  <div class="sec-head"><h2>What I do</h2><span class="n">02 — Services</span></div>
+  <div class="offer">
+    <div>
+      <span class="tag">New · AI sales automation</span>
+      <h3>No customer message left unanswered.</h3>
+      <p>I set up AI automations for Instagram and your website, so customers get an instant reply at any hour, and every enquiry turns into a booking or a sale instead of getting lost in the inbox.</p>
+      <a class="btn primary" href="mailto:xhulinovi@gmail.com?subject=AI%20automation%20for%20my%20business">Ask for an offer</a>
+    </div>
+    <div>
+      <ul>
+        <li><span><b>Instant replies, 24/7.</b> Comments and DMs asking about prices, hours or availability get answered in seconds.</span></li>
+        <li><span><b>Leads collected for you.</b> Names, phone numbers and requests saved in one place.</span></li>
+        <li><span><b>Straight to booking.</b> Customers are guided to reserve, order or call you.</span></li>
+        <li><span><b>Looked after every month.</b> I monitor, update answers and improve the flow.</span></li>
+      </ul>
+      <div class="plan"><span>One-time setup</span><span>Monthly care plan</span><span>Instagram · Website · Email</span></div>
+    </div>
+  </div>
   <div class="skills">
     <div class="skill"><b>Web design</b><span>WordPress themes, page builders, plugins, responsive layouts, site maintenance</span></div>
-    <div class="skill"><b>AI & no-code</b><span>Claude, Lovable, prompt writing, AI tools for content and automation</span></div>
+    <div class="skill"><b>AI & automation</b><span>Claude, Lovable, Zapier, Make, chatbots, Instagram DM automation, CRM and email flows</span></div>
     <div class="skill"><b>Paid ads</b><span>Google Ads setup, targeting, budget management, performance tracking</span></div>
     <div class="skill"><b>SEO</b><span>On-page optimization, keyword research, improving Google rankings</span></div>
     <div class="skill"><b>Marketing</b><span>Online presence strategy, project coordination, client communication</span></div>
@@ -234,7 +261,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 
 <section id="contact" class="contact"><div class="wrap">
   <h2>Let's work together.</h2>
-  <p>Need a website, a web app, or more customers from Google? I'm available for freelance and remote work.</p>
+  <p>Need a website, more customers from Google, or AI that answers them for you? I'm available for freelance and remote work.</p>
   <div class="btns">
     <a class="btn primary" href="mailto:xhulinovi@gmail.com">Email me</a>
     <a class="btn" href="https://github.com/xhulianovi" target="_blank" rel="noopener">GitHub ↗</a>
